@@ -32,6 +32,7 @@ class StarWarsMovie:
         if type(self.edited) is str:
             self.edited = dateutil.parser.parse(self.edited)
 
+
 if __name__ == '__main__':
     json = requests.get('https://swapi.co/api/films/1/').json()
 
